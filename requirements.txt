@@ -1,0 +1,10 @@
+pandas
+numpy
+numba
+xlrd
+statsmodels
+matplotlib
+pyyaml
+nbformat
+nbconvert
+ipykernel

@@ -1,0 +1,23 @@
+# fetch_dashboard.py 자동 생성 (2026-10-16 18:21)
+# ※ 새로 발주하면 scheduled_receipts에 직접 추가 (발주 내역은 로그인해야 보여서 자동으로 못 읽음)
+# 오늘 정산 전 → 오늘 계획 생산·예상 수요(중앙값)로 마감 재고 추정
+as_of: 2026-10-16            # 발주 폼의 Order date (게임상 오늘)
+plan_start: 2026-10-17       # --daily 계획 시작일
+round_end: 2026-10-16
+
+finished_goods:
+  P1: 188000
+  P2: 5123
+
+materials:
+  M1: 0
+  M2: 21000
+  M3: 32000
+
+scheduled_receipts:
+  - {material: M2, date: 2026-10-16, qty: 98000}
+
+locked_production:           # 이번 주 생산계획 (이미 고정, 대시보드에서 읽음)
+  2026-10-17: {P1: 0, P2: 0}
+
+order_mode: daily
